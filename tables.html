@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tablas</title>
 </head>
 <body>
 
@@ -17,8 +17,6 @@
 
     <h1>Ejemplos de tablas</h1>
     <h2>Tabla con bordes "colapsados"</h2>
-    <br>
-        
     <table>
      <tr>
         <td>Elemento 1</td>
@@ -29,5 +27,51 @@
         <td>Elemento 4</td>
      </tr>
     </table>
+
+    <h2>Tabla con celdas de cabezera y caption</h2>
+    <table>
+
+        <caption>Grandes jugadores colombianos</caption>
+        
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido 1</th>
+            <th>Apellido 2</th>
+        </tr>
+        <tr>
+           <td>José René</td>
+           <td>Huguita</td>
+           <td>Zapata</td>
+        </tr>
+        <tr>
+           <td>Carlos Alberto</td>
+           <td>Valderrama</td>
+           <td>Palacio</td>
+        </tr>
+       </table>
+    <h2>Tabla con atributos rowspan y colspan</h2>
+    <table>
+     <tr>
+        <td rowspan="2"> Elemento 1</td>
+        <td>Elemento 2</td>
+        <td>Elemento 3</td>
+     </tr>
+     <tr>
+        <td>Elemento 4</td>
+        <td>Elemento 5</td>
+     </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td colspan="3">Elemento 1-A</td>
+        </tr>
+        <tr>
+            <td>Elemento 2-A</td>
+            <td>Elemento 2-B</td>
+            <td>Elemento 2-C</td>
+        </tr>
+    </table>
+
 </body>
 </html>
