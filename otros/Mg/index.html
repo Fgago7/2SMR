@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página Profesional - Tema Oscuro</title>
+
+    <!-- Fuente de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilos Globales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #e0e0e0;
+            background-color: #121212;
+        }
+
+        /* Estilos del Header */
+        header {
+            background-color: #1f1f1f;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #333;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: #e0e0e0;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff9800;
+        }
+
+        .cta-button a {
+            background-color: #ff9800;
+            color: #121212;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button a:hover {
+            background-color: #ff5722;
+        }
+
+        /* Sección Hero */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,dark') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: purple;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-text p {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-primary {
+            background-color: #ff9800;
+            color: #121212;
+            padding: 10px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: #ff5722;
+        }
+
+        /* Sección de Servicios */
+        .services {
+            padding: 4rem 0;
+            text-align: center;
+            background-color: #1f1f1f;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #e0e0e0;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background-color: #333;
+            padding: 2rem;
+            border-radius: 12px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ff9800;
+        }
+
+        .service-card h3 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+            color: #e0e0e0;
+        }
+
+        .service-card p {
+            color: #b0b0b0;
+        }
+
+        /* Sección de Contacto */
+        .contact {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #121212;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact p {
+            margin-bottom: 2rem;
+            color: #b0b0b0;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            border: 1px solid #333;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #ff9800;
+            color: #121212;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #ff5722;
+        }
+
+        .message-success {
+            display: none;
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            color: #b0b0b0;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Mi Marca</div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="cta-button">
+                <a href="#contact">Contáctame</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Soluciones Digitales para tu Futuro</h1>
+            <p>Transforma tu negocio con servicios innovadores y tecnología avanzada.</p>
+            <a href="#services" class="btn-primary">Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="services" class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-container">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Desarrollo Web</h3>
+                <p>Diseñamos y desarrollamos sitios web modernos, rápidos y seguros.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Marketing Digital</h3>
+                <p>Te ayudamos a llegar a tu audiencia con campañas personalizadas.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cogs"></i>
+                <h3>Consultoría Técnica</h3>
+                <p>Asesoría para optimizar los procesos tecnológicos de tu empresa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contact" class="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna consulta? Completa el formulario y nos pondremos en contacto.</p>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Tu nombre" required>
+            <input type="email" id="email" placeholder="Tu email" required>
+            <textarea id="message" placeholder="Tu mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="message-success" id="successMessage">¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.</div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Mi Marca. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script
