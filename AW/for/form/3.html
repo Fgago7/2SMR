@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tabla1 {
+            border-collapse: collapse;
+            border: 1px solid black;
+            background-color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="DesDatos.html" method="post"></form>
+    <fieldset style="background-color: rgb(158, 158, 158);">
+        <legend>
+            <table id="tabla1">
+                <tr>
+                    <td>Datos personales</td>
+                </tr>
+            </table>
+        </legend>
+        <table style="background: rgb(158, 158, 158);">
+            <tr>
+                <td>Nombre:</td>
+                <td>Apellidos:</td>
+                <td>DNI:</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Localidad de Nacimiento:</td>
+                <td>Provincia:</td>
+                <td>Fecha de Nacimineto:</td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><select name="pro">
+                        <option value="hue">Huelva</option>
+                        <option value="sev">Sevilla</option>
+                        <option value="cor">Córdoba</option>
+                        <option value="jae">Jen</option>
+                        <option value="cad">Cadiz</option>
+                        <option value="mal">Málaga</option>
+                        <option value="gra">Granada</option>
+                        <option value="alm">Almería</option>
+                    </select></td>
+                <td><input type="text" placeholder="dd/mm/aaaa"></td>
+            </tr>
+            <tr>
+                <td colspan="2">Dirección:</td>
+                <td>Código Postal:</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" size="40"></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset style="background-color: rgb(255, 211, 158);">
+        <legend>
+            <table id="tabla1">
+                <tr>
+                    <td>Forma de Acceso</td>
+                </tr>
+            </table>
+        </legend>
+        <ul style="list-style: none;">
+            <li><input type="radio" name="acc">Grupo 1 (Bachillerato)
+                <ul style="list-style: none;">
+                    <li><input type="radio" name="acc"> Bachillerato relacionado</li>
+                    <li><input type="radio" name="acc"> Bachillerato no relacionado</li>
+                    <li><input type="radio" name="acc"> Otros (especifique) <input type="text" size="25"></li>
+                </ul>
+            </li>
+
+            <li>
+            <li><input type="radio" name="acc">Grupo 2 (Técnico)
+            <li><input type="radio" name="acc">Grupo 3 (Prueba de acceso)
+            </li>
+        </ul>
+    </fieldset>
+    <fieldset style="background-color: rgb(255, 211, 158);">
+        <legend>
+            <table id="tabla1">
+                <tr>
+                    <td>Documentos Adjuntados</td>
+                </tr>
+            </table>
+        </legend>
+        <ul style="list-style: none;">
+            <li><input type="radio" name="acc">Grupo 1 (Bachillerato)
+                <ul style="list-style: none;">
+                    <li><input type="radio" name="acc"> Bachillerato relacionado</li>
+                    <li><input type="radio" name="acc"> Bachillerato no relacionado</li>
+                    <li><input type="radio" name="acc"> Otros (especifique) <input type="text" size="25"></li>
+                </ul>
+            </li>
+
+            <li>
+            <li><input type="radio" name="acc">Grupo 2 (Técnico)
+            <li><input type="radio" name="acc">Grupo 3 (Prueba de acceso)
+            </li>
+        </ul>
+    </fieldset>
+    </form>
+
+</body>
+
+</html>
