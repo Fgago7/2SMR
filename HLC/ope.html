@@ -53,16 +53,26 @@
 
         document.write(numero1p, ' % ', numero2p, ' = ', resultadop, '<br>', '<br>');
 
-        //5.Porcentaje--------------------------------------------------------------------------------------------------------------------------------------------------------------   
+        //5.Abono de Tienda--------------------------------------------------------------------------------------------------------------------------------------------------------------   
         document.write('Introduce 2 numeros para calcular el modulo', '<br>');
 
-        var numero1p, numero2p, resultadop;
+        var precio, client, abonar;
 
-        precio = 6.30
-        numero2p = parseInt(prompt('Introduce el segundo número'));
-        resultadop = numero1p % numero2p;
+        precio = 6.30;
+        client = 10;
+        abonar = client - precio;
 
-        document.write(Precio, ' % ', numero2p, ' = ', resultadop, '<br>', '<br>');
+        document.write(abonar, '<br>', '<br>');
+
+        //6.Concatenar nombre y apellidos--------------------------------------------------------------------------------------------------------------------------------------------------------------   
+        document.write('Nombre y apellidos, '<br>');
+
+        var precio, client, abonar;
+
+        nombr = prompt('Introduce tu nombre ');
+        apell = prompt('Introduce tus apellidos ');
+
+        document.write(nombr + ' ' + apell);
 
     </script>
 </body>
