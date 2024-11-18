@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: rgb(255,255,255);
+            background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgb(185, 185, 185) 50%, rgb(160, 160, 160) 100%);
+        }
+
+        .centered-text {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Configuración de estilo para los contenedores de imágenes */
+        .images-container {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        fieldset {
+            width: 250px;
+            height: 250px;
+            background: rgb(97, 97, 97);
+            background: radial-gradient(circle, rgba(97, 97, 97, 1) 0%, rgba(56, 56, 56, 1) 50%, rgba(0, 0, 0, 1) 100%);
+        }
+
+        /* Estilos para el botón del menú desplegable */
+        .dropdown button {
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            /* Color de fondo del botón */
+            color: white;
+            /* Color del texto del botón */
+            padding: 10px 20px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Estilos para el menú desplegable */
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 100%;
+            background-color: #333333;
+            /* Color de fondo del menú desplegable */
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+            font-size: 20px;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilos de los enlaces dentro del menú */
+        .dropdown-content a {
+            display: block;
+            color: white;
+            /* Color de texto de los enlaces */
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            color: rgb(212, 0, 255);
+            /* Color del texto al pasar el ratón */
+            background-color: #555555;
+            /* Color de fondo al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-family: The Laker; font-size: 50px; text-align: center">Aplicaciones Web <br> Practice 6:
+            Personal web page</h1>
+    </header>
+    <nav align="center">
+        <div class="dropdown">
+            <button style="font-family: The Laker;">Paginas Webs</button>
+            <div class="dropdown-content">
+                <a href="index.html"><b>Inicio</b></a>
+                <a href="1.Magia/magia.html"><b>Tienda de Magia</b></a>
+                <a href="2.SMR/smr.html"><b>SMR</b></a>
+                <a href="3.Blender/blender.html"><b>Blender</b></a>
+                <a href="4.Videojuegos/videojuegos.html"><b>Videojuegos</b></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href=""><button style="font-family: The Laker;">Contacto</button></a>
+        </div>
+    </nav>
+    <div>
+        </nav>
+        <section>
+        <article>
+                <h1 style="font-family: the laker; font-size: 50px; text-align: center">Paginas Webs</h1>
+                <div class="images-container">
+                    <fieldset>
+                        <a href="">
+                            <img src="" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="">
+                            <img src="imag/3.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="">
+                            <img src="imag/5.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="">
+                            <img src="imag/2.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="">
+                            <img src="imag/2.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="">
+                            <img src="imag/2.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                </div>
+            </article>
+        </section>
+</body>
+
+</html>
