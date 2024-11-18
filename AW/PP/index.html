@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         body {
             background: rgb(97, 97, 97);
@@ -35,9 +36,11 @@
 
         /* Estilos para el botón del menú desplegable */
         .dropdown button {
-            background: rgb(131,58,180);
-            background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); /* Color de fondo del botón */
-            color: white; /* Color del texto del botón */
+            background: rgb(131, 58, 180);
+            background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+            /* Color de fondo del botón */
+            color: white;
+            /* Color del texto del botón */
             padding: 10px 20px;
             font-size: 20px;
             border: none;
@@ -54,7 +57,8 @@
             display: none;
             position: absolute;
             width: 100%;
-            background-color: #333333; /* Color de fondo del menú desplegable */
+            background-color: #333333;
+            /* Color de fondo del menú desplegable */
             box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
             font-size: 20px;
             color: white;
@@ -67,60 +71,78 @@
         /* Estilos de los enlaces dentro del menú */
         .dropdown-content a {
             display: block;
-            color: white; /* Color de texto de los enlaces */
+            color: white;
+            /* Color de texto de los enlaces */
             padding: 5px;
             text-decoration: none;
         }
 
         .dropdown-content a:hover {
-            color: rgb(212, 0, 255); /* Color del texto al pasar el ratón */
-            background-color: #555555; /* Color de fondo al pasar el ratón */
+            color: rgb(212, 0, 255);
+            /* Color del texto al pasar el ratón */
+            background-color: #555555;
+            /* Color de fondo al pasar el ratón */
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1 style="font-family: The Laker; font-size: 50px; text-align: center">Aplicaciones Web <br> Practice 6: Personal web page</h1>
+        <h1 style="font-family: The Laker; font-size: 50px; text-align: center">Aplicaciones Web <br> Practice 6:
+            Personal web page</h1>
     </header>
-
     <nav align="center">
         <div class="dropdown">
             <button style="font-family: The Laker;">Paginas Webs</button>
             <div class="dropdown-content">
-                <a href=""><b>Tienda de Magia</b></a>
-                <a href=""><b>SMR</b></a>
-                <a href=""><b>Blender</b></a>
-                <a href=""><b>Videojuegos</b></a>
+                <a href="index.html"><b>Inicio</b></a>
+                <a href="1.Magia/magia.html"><b>Tienda de Magia</b></a>
+                <a href="2.SMR/smr.html"><b>SMR</b></a>
+                <a href="3.Blender/blender.html"><b>Blender</b></a>
+                <a href="4.Videojuegos/videojuegos.html"><b>Videojuegos</b></a>
             </div>
         </div>
         <div class="dropdown">
             <a href=""><button style="font-family: The Laker;">Contacto</button></a>
         </div>
     </nav>
+    <div>
+        </nav>
+        <section>
+            <article>
+                <div
+                    style="background: rgb(131,58,180); background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">
+                    <p style="font-size: 30px;"><b>Nombre:</b> Francisco José Gago Caballero</p>
+                    <p style="font-size: 30px;"><b>Curso:</b> 2ºSMR</p>
+                </div>
+            </article>
 
-    </nav>
-
-    <div style="background: rgb(131,58,180); background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">
-        <p style="font-size: 30px;"><b>Nombre:</b> Francisco José Gago Caballero</p>
-        <p style="font-size: 30px;"><b>Curso:</b> 2ºSMR</p>
-    </div>
-
-    <h1 style="font-family: the laker; font-size: 50px; text-align: center">Paginas Webs</h1>
-    <div class="images-container">
-        <fieldset>
-            <img src="" alt="Imagen 1">
-        </fieldset>
-        <fieldset>
-            <img src="" alt="Imagen 2">
-        </fieldset>
-        <fieldset>
-            <img src="" alt="Imagen 3">
-        </fieldset>
-        <fieldset>
-            <img src="" alt="Imagen 4">
-        </fieldset>
-    </div>
+            <article>
+                <h1 style="font-family: the laker; font-size: 50px; text-align: center">Paginas Webs</h1>
+                <div class="images-container">
+                    <fieldset>
+                        <a href="1.Magia/magia.html">
+                            <img src="imag/4.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="2.SMR/smr.html">
+                            <img src="imag/3.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="3.Blender/blender.html">
+                            <img src="imag/5.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                    <fieldset>
+                        <a href="4.Videojuegos/videojuegos.html">
+                            <img src="imag/2.png" alt="Imagen 1" height="250px" width="250px">
+                        </a>
+                    </fieldset>
+                </div>
+            </article>
+        </section>
 </body>
 
 </html>
