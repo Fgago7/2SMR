@@ -1,0 +1,18 @@
+body{
+    background-color: gray;
+    color: white;
+}
+
+h1{
+    color: red;
+}
+
+#primero{
+    color: darkgreen;
+}
+
+pre{
+    color: black;
+    font-size: 14px;
+}
+
